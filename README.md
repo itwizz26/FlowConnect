@@ -37,14 +37,14 @@ Selects a country by alpha 3 code specified (no **UPDATE/DELETE** actions allowe
 ## How to get up and running
 ### The manual way
 
-Once all files have been extracted, run the python requirements file to set up the backend environment. Change dir into the **~/flowconnect/** directory and run this command:
+Once all services have been cloned, run the python requirements file to set up the backend environment. Change dir into the **FlowConnect/backend** directory and run this command:
 
 ```
 pip3 install -r requirements.txt (MacOs)
 pip install -r requirements.txt (Windows)
 ```
 
-Change into the **/countries/** directory and run this command to start the python/backened server:
+Still inside the **FlowConnect/backend/** directory, run this command to start the Django/backened server:
 
 ```
 python3 manage.py runserver (MacOs)
@@ -56,7 +56,7 @@ You should now be able to see a view similar to this one. This server will be li
 
 ![alt text](1.png)
 
-Once your backend is up and running, change into the frontend directory (**~/flowconnect/frontend**) and run these commands to get started.
+Once your backend is up and running, change into the frontend directory (**../frontend/**) and run these commands to boot up the frontend service.
 
 ```
 npm install
@@ -69,13 +69,15 @@ Now open the front view from **http://localhost:3000** (default port should be 3
 
 ### The dockerised way
 
-Run this command from the root of the project.
+This is the preferred way for a faster team colaboration environment. Run this command from the root dir of the project.
 ```
 docker-compose up --build (version 1)
 docker compose up --build (version 2)
 ```
 
-After docker build has finished, you can access both microseverices independantly as above.
+Please note that your first build will take slighly longer as expected to set up the back and front end microservices.
+
+After docker build has finished, you can access both microseverices independantly as above. Normally, an enduser will be given access to just the frontend part of the eco system!
 
 ## Acknowledgements
 
