@@ -35,9 +35,16 @@ Selects a country by alpha 3 code specified (no **UPDATE/DELETE** actions allowe
 
 
 ## How to get up and running
-### The manual way
 
-Once all services have been cloned, run the python requirements file to set up the backend environment. Change dir into the **FlowConnect/backend** directory and run this command:
+Firstly, rename/copy the `.env.example` file into a new `.env` file and add your machine specific environmental credentials as indicated. 
+
+There are two ways to boot up this system as outlined below. Let's get started!
+
+### 1. The manual way
+
+Don't have a docker or similar environment configured already? Don't worry, we've got you covered below.
+
+Once the repo has been cloned, run the python requirements file to set up the backend environment with all the necessary Django packages. Change dir into the **FlowConnect/backend/** directory and run this command:
 
 ```
 pip3 install -r requirements.txt (MacOs)
@@ -67,7 +74,7 @@ Now open the front view from **http://localhost:3000** (default port should be 3
 
 ![alt text](2.png)
 
-### The dockerised way
+### 2. The dockerised way
 
 This is the preferred way for a faster team colaboration environment. Run this command from the root dir of the project.
 ```
