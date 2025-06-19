@@ -84,7 +84,13 @@ docker compose up --build (version 2)
 
 Please note that your first build will take slighly longer as expected to set up the back and front end microservices.
 
-After docker build has finished, you can access both microseverices independantly as above. Normally, an enduser will be given access to just the frontend part of the eco system!
+After docker build has finished, you can access both microseverices independantly from:
+```
+http://127.0.0.1:8000/ (backend)
+http://127.0.0.1:3000/ (frontend)
+```
+
+Normally, an enduser will be given access to just the frontend part of the ecosystem!
 
 ## Acknowledgements
 
