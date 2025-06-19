@@ -80,7 +80,6 @@ dist/
 *.gz
 docker-compose.override.yml
 docker-compose*.env
-.dockerignore
 .docker/
 
 # ========================
